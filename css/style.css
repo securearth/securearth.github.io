@@ -1,0 +1,184 @@
+/***/
+/** Stylesheel writter by bugswriter
+ */
+
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
+
+@font-face {
+  font-family: 'pixel-b';
+  src: url('../fonts/pixel-b.ttf') format('truetype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face{
+    font-family: 'ChessType';
+    src: url('../fonts/ChessType.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'subway';
+    src: url('../fonts/subway.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'ArcadeClassic';
+    src: url('../fonts/ArcadeClassic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Color Variables*/
+
+:root {
+    --color0: pink;
+    --color1: #cc241d;
+    --color2: #98971a;
+    --color3: #d79921;
+    --color4: #458588;
+    --color5: #b16286;
+    --color6: #689d6a;
+    --color7: #a89984;
+    --color8: #928374;
+    --color9: #fb4934;
+    --color10: #b8bb26;
+    --color11: #fabd2f;
+    --color12: #83a598;
+    --color13: #d3869b;
+    --color14: #8ec07c;
+    --color15: #ebdbb2;
+    --color256: #1d2021;
+    --color257: #ebdbb2;
+}
+
+/* Global styles */
+
+html {
+    background: url(../img/bg/bg_blur.jpg) repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-size: 18px;
+}
+
+body {
+    /*overflow cant be changed on body. since this type of styling is not for the body tag.*/
+    max-width: 1000px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-bottom: 300px;;
+    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,1));
+
+}
+a {
+    color: white;
+}
+
+/* Header */
+header h1{
+    text-align: center;
+    line-height: 1.2em;
+}
+
+/* Navbar */
+
+nav{
+    margin: 5px;
+}
+
+nav ul{
+    font-family: 'ChessType';
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: lightblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: var(--color5);
+    background-color: white;
+    text-decoration: underline;
+}
+
+/* Sections */
+section{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+
+
+/* Footer */
+footer {
+    font-size: 1em;
+    text-align: center;
+    font-family: 'hack';
+    color: white;
+}
+
+
+/* Section Components */
+
+article{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+article h2{
+    font-family: 'ArcadeClassic';
+}
+
+article p{
+    line-height: 1.6em;
+    font-size: 1em;
+    color: pink;
+    font-family: 'ChessType';
+}
+
+article figure{
+    margin: 5px;
+}
+
+.neofetch{
+    font-family: 'hack';
+}
+
+#details{
+    font-size: 20px;
+    line-height: 1.6em;
+    display: flex;
+}
+
+.neofetch label{
+    color: pink;
+    font-weight: bolder;
+}
+
+article ul{
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+article li{
+
+}
